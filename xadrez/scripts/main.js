@@ -65,14 +65,16 @@ const peao_b_8 = document.getElementById('peao_b_8');
 
 
 // entrada do botão reset
-const resetar = document.querySelector('#andar');
+const resetar = document.querySelector('#resetar');
+const cancelar = document.querySelector('#cancelar');
+const turno = document.querySelector('#turno');
 
 // entradas peças pretas
 const btn_rei_p = document.getElementById('btn_rei_p');
 const btn_rainha_p = document.getElementById('btn_rainha_p');
 
 const btn_torre_p_1 = document.getElementById('btn_torre_p_1');
-const btn_orre_p_2 = document.getElementById('btn_torre_p_2');
+const btn_torre_p_2 = document.getElementById('btn_torre_p_2');
 const btn_cavalo_p_1 = document.getElementById('btn_cavalo_p_1');
 const btn_cavalo_p_2 = document.getElementById('btn_cavalo_p_2');
 const btn_bispo_p_1 = document.getElementById('btn_bispo_p_1');
@@ -93,7 +95,7 @@ const btn_rei_b = document.getElementById('btn_rei_b');
 const btn_rainha_b = document.getElementById('btn_rainha_b');
 
 const btn_torre_b_1 = document.getElementById('btn_torre_b_1');
-const btn_orre_b_2 = document.getElementById('btn_torre_b_2');
+const btn_torre_b_2 = document.getElementById('btn_torre_b_2');
 const btn_cavalo_b_1 = document.getElementById('btn_cavalo_b_1');
 const btn_cavalo_b_2 = document.getElementById('btn_cavalo_b_2');
 const btn_bispo_b_1 = document.getElementById('btn_bispo_b_1');
@@ -107,6 +109,31 @@ const btn_peao_b_5 = document.getElementById('btn_peao_b_5');
 const btn_peao_b_6 = document.getElementById('btn_peao_b_6');
 const btn_peao_b_7 = document.getElementById('btn_peao_b_7');
 const btn_peao_b_8 = document.getElementById('btn_peao_b_8');
+
+// inputs jogadas peões pretos
+const btn_peao_p_1_andar1 = document.getElementById('btn_peao_p_1_andar1');
+const btn_peao_p_1_andar2 = document.getElementById('btn_peao_p_1_andar2');
+
+const btn_peao_p_2_andar1 = document.getElementById('btn_peao_p_2_andar1');
+const btn_peao_p_2_andar2 = document.getElementById('btn_peao_p_2_andar2');
+
+const btn_peao_p_3_andar1 = document.getElementById('btn_peao_p_3_andar1');
+const btn_peao_p_3_andar2 = document.getElementById('btn_peao_p_3_andar2');
+
+const btn_peao_p_4_andar1 = document.getElementById('btn_peao_p_4_andar1');
+const btn_peao_p_4_andar2 = document.getElementById('btn_peao_p_4_andar2');
+
+const btn_peao_p_5_andar1 = document.getElementById('btn_peao_p_5_andar1');
+const btn_peao_p_5_andar2 = document.getElementById('btn_peao_p_5_andar2');
+
+const btn_peao_p_6_andar1 = document.getElementById('btn_peao_p_6_andar1');
+const btn_peao_p_6_andar2 = document.getElementById('btn_peao_p_6_andar2');
+
+const btn_peao_p_7_andar1 = document.getElementById('btn_peao_p_7_andar1');
+const btn_peao_p_7_andar2 = document.getElementById('btn_peao_p_7_andar2');
+
+const btn_peao_p_8_andar1 = document.getElementById('btn_peao_p_8_andar1');
+const btn_peao_p_8_andar2 = document.getElementById('btn_peao_p_8_andar2');
 
 // inputs jogadas peões brancos
 const btn_peao_b_1_andar1 = document.getElementById('btn_peao_b_1_andar1');
@@ -133,7 +160,74 @@ const btn_peao_b_7_andar2 = document.getElementById('btn_peao_b_7_andar2');
 const btn_peao_b_8_andar1 = document.getElementById('btn_peao_b_8_andar1');
 const btn_peao_b_8_andar2 = document.getElementById('btn_peao_b_8_andar2');
 
-// jogadas torres brancas
+// jogadas torres brancas (1)
+const btn_torre_p_1_andar1 = document.getElementById('btn_torre_p_1_andar1');
+const btn_torre_p_1_andar2 = document.getElementById('btn_torre_p_1_andar2');
+const btn_torre_p_1_andar3 = document.getElementById('btn_torre_p_1_andar3');
+const btn_torre_p_1_andar4 = document.getElementById('btn_torre_p_1_andar4');
+const btn_torre_p_1_andar5 = document.getElementById('btn_torre_p_1_andar5');
+const btn_torre_p_1_andar6 = document.getElementById('btn_torre_p_1_andar6');
+const btn_torre_p_1_andar7 = document.getElementById('btn_torre_p_1_andar7');
+
+const btn_torre_p_1_andar_lado1 = document.getElementById('btn_torre_p_1_andar_lado1');
+const btn_torre_p_1_andar_lado2 = document.getElementById('btn_torre_p_1_andar_lado2');
+const btn_torre_p_1_andar_lado3 = document.getElementById('btn_torre_p_1_andar_lado3');
+const btn_torre_p_1_andar_lado4 = document.getElementById('btn_torre_p_1_andar_lado4');
+const btn_torre_p_1_andar_lado5 = document.getElementById('btn_torre_p_1_andar_lado5');
+const btn_torre_p_1_andar_lado6 = document.getElementById('btn_torre_p_1_andar_lado6');
+const btn_torre_p_1_andar_lado7 = document.getElementById('btn_torre_p_1_andar_lado7');
+
+const btn_torre_p_1_andar_lado_esquerdo1 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo1');
+const btn_torre_p_1_andar_lado_esquerdo2 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo2');
+const btn_torre_p_1_andar_lado_esquerdo3 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo3');
+const btn_torre_p_1_andar_lado_esquerdo4 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo4');
+const btn_torre_p_1_andar_lado_esquerdo5 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo5');
+const btn_torre_p_1_andar_lado_esquerdo6 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo6');
+const btn_torre_p_1_andar_lado_esquerdo7 = document.getElementById('btn_torre_p_1_andar_lado_esquerdo7');
+
+const btn_torre_p_1_andar_tras1 = document.getElementById('btn_torre_p_1_andar_tras1');
+const btn_torre_p_1_andar_tras2 = document.getElementById('btn_torre_p_1_andar_tras2');
+const btn_torre_p_1_andar_tras3 = document.getElementById('btn_torre_p_1_andar_tras3');
+const btn_torre_p_1_andar_tras4 = document.getElementById('btn_torre_p_1_andar_tras4');
+const btn_torre_p_1_andar_tras5 = document.getElementById('btn_torre_p_1_andar_tras5');
+const btn_torre_p_1_andar_tras6 = document.getElementById('btn_torre_p_1_andar_tras6');
+const btn_torre_p_1_andar_tras7 = document.getElementById('btn_torre_p_1_andar_tras7');
+
+// jogadas torres brancas (2)
+const btn_torre_p_2_andar1 = document.getElementById('btn_torre_p_2_andar1');
+const btn_torre_p_2_andar2 = document.getElementById('btn_torre_p_2_andar2');
+const btn_torre_p_2_andar3 = document.getElementById('btn_torre_p_2_andar3');
+const btn_torre_p_2_andar4 = document.getElementById('btn_torre_p_2_andar4');
+const btn_torre_p_2_andar5 = document.getElementById('btn_torre_p_2_andar5');
+const btn_torre_p_2_andar6 = document.getElementById('btn_torre_p_2_andar6');
+const btn_torre_p_2_andar7 = document.getElementById('btn_torre_p_2_andar7');
+
+const btn_torre_p_2_andar_lado1 = document.getElementById('btn_torre_p_2_andar_lado1');
+const btn_torre_p_2_andar_lado2 = document.getElementById('btn_torre_p_2_andar_lado2');
+const btn_torre_p_2_andar_lado3 = document.getElementById('btn_torre_p_2_andar_lado3');
+const btn_torre_p_2_andar_lado4 = document.getElementById('btn_torre_p_2_andar_lado4');
+const btn_torre_p_2_andar_lado5 = document.getElementById('btn_torre_p_2_andar_lado5');
+const btn_torre_p_2_andar_lado6 = document.getElementById('btn_torre_p_2_andar_lado6');
+const btn_torre_p_2_andar_lado7 = document.getElementById('btn_torre_p_2_andar_lado7');
+
+const btn_torre_p_2_andar_lado_esquerdo1 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo1');
+const btn_torre_p_2_andar_lado_esquerdo2 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo2');
+const btn_torre_p_2_andar_lado_esquerdo3 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo3');
+const btn_torre_p_2_andar_lado_esquerdo4 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo4');
+const btn_torre_p_2_andar_lado_esquerdo5 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo5');
+const btn_torre_p_2_andar_lado_esquerdo6 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo6');
+const btn_torre_p_2_andar_lado_esquerdo7 = document.getElementById('btn_torre_p_2_andar_lado_esquerdo7');
+
+const btn_torre_p_2_andar_tras1 = document.getElementById('btn_torre_p_2_andar_tras1');
+const btn_torre_p_2_andar_tras2 = document.getElementById('btn_torre_p_2_andar_tras2');
+const btn_torre_p_2_andar_tras3 = document.getElementById('btn_torre_p_2_andar_tras3');
+const btn_torre_p_2_andar_tras4 = document.getElementById('btn_torre_p_2_andar_tras4');
+const btn_torre_p_2_andar_tras5 = document.getElementById('btn_torre_p_2_andar_tras5');
+const btn_torre_p_2_andar_tras6 = document.getElementById('btn_torre_p_2_andar_tras6');
+const btn_torre_p_2_andar_tras7 = document.getElementById('btn_torre_p_2_andar_tras7');
+
+
+// jogadas torres brancas (1)
 const btn_torre_b_1_andar1 = document.getElementById('btn_torre_b_1_andar1');
 const btn_torre_b_1_andar2 = document.getElementById('btn_torre_b_1_andar2');
 const btn_torre_b_1_andar3 = document.getElementById('btn_torre_b_1_andar3');
@@ -149,6 +243,364 @@ const btn_torre_b_1_andar_lado4 = document.getElementById('btn_torre_b_1_andar_l
 const btn_torre_b_1_andar_lado5 = document.getElementById('btn_torre_b_1_andar_lado5');
 const btn_torre_b_1_andar_lado6 = document.getElementById('btn_torre_b_1_andar_lado6');
 const btn_torre_b_1_andar_lado7 = document.getElementById('btn_torre_b_1_andar_lado7');
+
+const btn_torre_b_1_andar_lado_esquerdo1 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo1');
+const btn_torre_b_1_andar_lado_esquerdo2 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo2');
+const btn_torre_b_1_andar_lado_esquerdo3 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo3');
+const btn_torre_b_1_andar_lado_esquerdo4 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo4');
+const btn_torre_b_1_andar_lado_esquerdo5 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo5');
+const btn_torre_b_1_andar_lado_esquerdo6 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo6');
+const btn_torre_b_1_andar_lado_esquerdo7 = document.getElementById('btn_torre_b_1_andar_lado_esquerdo7');
+
+const btn_torre_b_1_andar_tras1 = document.getElementById('btn_torre_b_1_andar_tras1');
+const btn_torre_b_1_andar_tras2 = document.getElementById('btn_torre_b_1_andar_tras2');
+const btn_torre_b_1_andar_tras3 = document.getElementById('btn_torre_b_1_andar_tras3');
+const btn_torre_b_1_andar_tras4 = document.getElementById('btn_torre_b_1_andar_tras4');
+const btn_torre_b_1_andar_tras5 = document.getElementById('btn_torre_b_1_andar_tras5');
+const btn_torre_b_1_andar_tras6 = document.getElementById('btn_torre_b_1_andar_tras6');
+const btn_torre_b_1_andar_tras7 = document.getElementById('btn_torre_b_1_andar_tras7');
+
+// jogadas torres brancas (2)
+const btn_torre_b_2_andar1 = document.getElementById('btn_torre_b_2_andar1');
+const btn_torre_b_2_andar2 = document.getElementById('btn_torre_b_2_andar2');
+const btn_torre_b_2_andar3 = document.getElementById('btn_torre_b_2_andar3');
+const btn_torre_b_2_andar4 = document.getElementById('btn_torre_b_2_andar4');
+const btn_torre_b_2_andar5 = document.getElementById('btn_torre_b_2_andar5');
+const btn_torre_b_2_andar6 = document.getElementById('btn_torre_b_2_andar6');
+const btn_torre_b_2_andar7 = document.getElementById('btn_torre_b_2_andar7');
+
+const btn_torre_b_2_andar_lado1 = document.getElementById('btn_torre_b_2_andar_lado1');
+const btn_torre_b_2_andar_lado2 = document.getElementById('btn_torre_b_2_andar_lado2');
+const btn_torre_b_2_andar_lado3 = document.getElementById('btn_torre_b_2_andar_lado3');
+const btn_torre_b_2_andar_lado4 = document.getElementById('btn_torre_b_2_andar_lado4');
+const btn_torre_b_2_andar_lado5 = document.getElementById('btn_torre_b_2_andar_lado5');
+const btn_torre_b_2_andar_lado6 = document.getElementById('btn_torre_b_2_andar_lado6');
+const btn_torre_b_2_andar_lado7 = document.getElementById('btn_torre_b_2_andar_lado7');
+
+const btn_torre_b_2_andar_lado_esquerdo1 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo1');
+const btn_torre_b_2_andar_lado_esquerdo2 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo2');
+const btn_torre_b_2_andar_lado_esquerdo3 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo3');
+const btn_torre_b_2_andar_lado_esquerdo4 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo4');
+const btn_torre_b_2_andar_lado_esquerdo5 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo5');
+const btn_torre_b_2_andar_lado_esquerdo6 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo6');
+const btn_torre_b_2_andar_lado_esquerdo7 = document.getElementById('btn_torre_b_2_andar_lado_esquerdo7');
+
+const btn_torre_b_2_andar_tras1 = document.getElementById('btn_torre_b_2_andar_tras1');
+const btn_torre_b_2_andar_tras2 = document.getElementById('btn_torre_b_2_andar_tras2');
+const btn_torre_b_2_andar_tras3 = document.getElementById('btn_torre_b_2_andar_tras3');
+const btn_torre_b_2_andar_tras4 = document.getElementById('btn_torre_b_2_andar_tras4');
+const btn_torre_b_2_andar_tras5 = document.getElementById('btn_torre_b_2_andar_tras5');
+const btn_torre_b_2_andar_tras6 = document.getElementById('btn_torre_b_2_andar_tras6');
+const btn_torre_b_2_andar_tras7 = document.getElementById('btn_torre_b_2_andar_tras7');
+
+
+// jogadas cavalos brancos (1)
+const btn_cavalo_b_1_andar1 = document.getElementById('btn_cavalo_b_1_andar1');
+const btn_cavalo_b_1_andar2 = document.getElementById('btn_cavalo_b_1_andar2');
+const btn_cavalo_b_1_andar3 = document.getElementById('btn_cavalo_b_1_andar3');
+const btn_cavalo_b_1_andar4 = document.getElementById('btn_cavalo_b_1_andar4');
+const btn_cavalo_b_1_andar5 = document.getElementById('btn_cavalo_b_1_andar5');
+const btn_cavalo_b_1_andar6 = document.getElementById('btn_cavalo_b_1_andar6');
+const btn_cavalo_b_1_andar7 = document.getElementById('btn_cavalo_b_1_andar7');
+const btn_cavalo_b_1_andar8 = document.getElementById('btn_cavalo_b_1_andar8');
+
+// jogadas cavalos brancos (2)
+const btn_cavalo_b_2_andar1 = document.getElementById('btn_cavalo_b_2_andar1');
+const btn_cavalo_b_2_andar2 = document.getElementById('btn_cavalo_b_2_andar2');
+const btn_cavalo_b_2_andar3 = document.getElementById('btn_cavalo_b_2_andar3');
+const btn_cavalo_b_2_andar4 = document.getElementById('btn_cavalo_b_2_andar4');
+const btn_cavalo_b_2_andar5 = document.getElementById('btn_cavalo_b_2_andar5');
+const btn_cavalo_b_2_andar6 = document.getElementById('btn_cavalo_b_2_andar6');
+const btn_cavalo_b_2_andar7 = document.getElementById('btn_cavalo_b_2_andar7');
+const btn_cavalo_b_2_andar8 = document.getElementById('btn_cavalo_b_2_andar8');
+
+// jogadas bispos brancos (1)
+const btn_bispo_b_1_diagonal_cima_direita1 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita1');
+const btn_bispo_b_1_diagonal_cima_direita2 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita2');
+const btn_bispo_b_1_diagonal_cima_direita3 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita3');
+const btn_bispo_b_1_diagonal_cima_direita4 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita4');
+const btn_bispo_b_1_diagonal_cima_direita5 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita5');
+const btn_bispo_b_1_diagonal_cima_direita6 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita6');
+const btn_bispo_b_1_diagonal_cima_direita7 = document.getElementById('btn_bispo_b_1_diagonal_cima_direita7');
+
+const btn_bispo_b_1_diagonal_cima_esquerda1 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda1');
+const btn_bispo_b_1_diagonal_cima_esquerda2 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda2');
+const btn_bispo_b_1_diagonal_cima_esquerda3 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda3');
+const btn_bispo_b_1_diagonal_cima_esquerda4 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda4');
+const btn_bispo_b_1_diagonal_cima_esquerda5 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda5');
+const btn_bispo_b_1_diagonal_cima_esquerda6 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda6');
+const btn_bispo_b_1_diagonal_cima_esquerda7 = document.getElementById('btn_bispo_b_1_diagonal_cima_esquerda7');
+
+const btn_bispo_b_1_diagonal_baixo_direita1 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita1');
+const btn_bispo_b_1_diagonal_baixo_direita2 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita2');
+const btn_bispo_b_1_diagonal_baixo_direita3 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita3');
+const btn_bispo_b_1_diagonal_baixo_direita4 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita4');
+const btn_bispo_b_1_diagonal_baixo_direita5 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita5');
+const btn_bispo_b_1_diagonal_baixo_direita6 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita6');
+const btn_bispo_b_1_diagonal_baixo_direita7 = document.getElementById('btn_bispo_b_1_diagonal_baixo_direita7');
+
+const btn_bispo_b_1_diagonal_baixo_esquerda1 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda1');
+const btn_bispo_b_1_diagonal_baixo_esquerda2 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda2');
+const btn_bispo_b_1_diagonal_baixo_esquerda3 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda3');
+const btn_bispo_b_1_diagonal_baixo_esquerda4 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda4');
+const btn_bispo_b_1_diagonal_baixo_esquerda5 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda5');
+const btn_bispo_b_1_diagonal_baixo_esquerda6 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda6');
+const btn_bispo_b_1_diagonal_baixo_esquerda7 = document.getElementById('btn_bispo_b_1_diagonal_baixo_esquerda7');
+
+
+// jogadas bispos brancos (2)
+const btn_bispo_b_2_diagonal_cima_direita1 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita1');
+const btn_bispo_b_2_diagonal_cima_direita2 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita2');
+const btn_bispo_b_2_diagonal_cima_direita3 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita3');
+const btn_bispo_b_2_diagonal_cima_direita4 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita4');
+const btn_bispo_b_2_diagonal_cima_direita5 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita5');
+const btn_bispo_b_2_diagonal_cima_direita6 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita6');
+const btn_bispo_b_2_diagonal_cima_direita7 = document.getElementById('btn_bispo_b_2_diagonal_cima_direita7');
+
+const btn_bispo_b_2_diagonal_cima_esquerda1 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda1');
+const btn_bispo_b_2_diagonal_cima_esquerda2 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda2');
+const btn_bispo_b_2_diagonal_cima_esquerda3 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda3');
+const btn_bispo_b_2_diagonal_cima_esquerda4 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda4');
+const btn_bispo_b_2_diagonal_cima_esquerda5 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda5');
+const btn_bispo_b_2_diagonal_cima_esquerda6 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda6');
+const btn_bispo_b_2_diagonal_cima_esquerda7 = document.getElementById('btn_bispo_b_2_diagonal_cima_esquerda7');
+
+const btn_bispo_b_2_diagonal_baixo_direita1 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita1');
+const btn_bispo_b_2_diagonal_baixo_direita2 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita2');
+const btn_bispo_b_2_diagonal_baixo_direita3 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita3');
+const btn_bispo_b_2_diagonal_baixo_direita4 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita4');
+const btn_bispo_b_2_diagonal_baixo_direita5 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita5');
+const btn_bispo_b_2_diagonal_baixo_direita6 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita6');
+const btn_bispo_b_2_diagonal_baixo_direita7 = document.getElementById('btn_bispo_b_2_diagonal_baixo_direita7');
+
+const btn_bispo_b_2_diagonal_baixo_esquerda1 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda1');
+const btn_bispo_b_2_diagonal_baixo_esquerda2 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda2');
+const btn_bispo_b_2_diagonal_baixo_esquerda3 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda3');
+const btn_bispo_b_2_diagonal_baixo_esquerda4 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda4');
+const btn_bispo_b_2_diagonal_baixo_esquerda5 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda5');
+const btn_bispo_b_2_diagonal_baixo_esquerda6 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda6');
+const btn_bispo_b_2_diagonal_baixo_esquerda7 = document.getElementById('btn_bispo_b_2_diagonal_baixo_esquerda7');
+
+
+// jogadas bispos pretos (1)
+const btn_bispo_p_1_diagonal_cima_direita1 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita1');
+const btn_bispo_p_1_diagonal_cima_direita2 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita2');
+const btn_bispo_p_1_diagonal_cima_direita3 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita3');
+const btn_bispo_p_1_diagonal_cima_direita4 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita4');
+const btn_bispo_p_1_diagonal_cima_direita5 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita5');
+const btn_bispo_p_1_diagonal_cima_direita6 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita6');
+const btn_bispo_p_1_diagonal_cima_direita7 = document.getElementById('btn_bispo_p_1_diagonal_cima_direita7');
+
+const btn_bispo_p_1_diagonal_cima_esquerda1 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda1');
+const btn_bispo_p_1_diagonal_cima_esquerda2 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda2');
+const btn_bispo_p_1_diagonal_cima_esquerda3 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda3');
+const btn_bispo_p_1_diagonal_cima_esquerda4 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda4');
+const btn_bispo_p_1_diagonal_cima_esquerda5 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda5');
+const btn_bispo_p_1_diagonal_cima_esquerda6 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda6');
+const btn_bispo_p_1_diagonal_cima_esquerda7 = document.getElementById('btn_bispo_p_1_diagonal_cima_esquerda7');
+
+const btn_bispo_p_1_diagonal_baixo_direita1 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita1');
+const btn_bispo_p_1_diagonal_baixo_direita2 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita2');
+const btn_bispo_p_1_diagonal_baixo_direita3 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita3');
+const btn_bispo_p_1_diagonal_baixo_direita4 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita4');
+const btn_bispo_p_1_diagonal_baixo_direita5 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita5');
+const btn_bispo_p_1_diagonal_baixo_direita6 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita6');
+const btn_bispo_p_1_diagonal_baixo_direita7 = document.getElementById('btn_bispo_p_1_diagonal_baixo_direita7');
+
+const btn_bispo_p_1_diagonal_baixo_esquerda1 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda1');
+const btn_bispo_p_1_diagonal_baixo_esquerda2 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda2');
+const btn_bispo_p_1_diagonal_baixo_esquerda3 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda3');
+const btn_bispo_p_1_diagonal_baixo_esquerda4 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda4');
+const btn_bispo_p_1_diagonal_baixo_esquerda5 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda5');
+const btn_bispo_p_1_diagonal_baixo_esquerda6 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda6');
+const btn_bispo_p_1_diagonal_baixo_esquerda7 = document.getElementById('btn_bispo_p_1_diagonal_baixo_esquerda7');
+
+
+// jogadas bispos pretos (2)
+const btn_bispo_p_2_diagonal_cima_direita1 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita1');
+const btn_bispo_p_2_diagonal_cima_direita2 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita2');
+const btn_bispo_p_2_diagonal_cima_direita3 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita3');
+const btn_bispo_p_2_diagonal_cima_direita4 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita4');
+const btn_bispo_p_2_diagonal_cima_direita5 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita5');
+const btn_bispo_p_2_diagonal_cima_direita6 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita6');
+const btn_bispo_p_2_diagonal_cima_direita7 = document.getElementById('btn_bispo_p_2_diagonal_cima_direita7');
+
+const btn_bispo_p_2_diagonal_cima_esquerda1 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda1');
+const btn_bispo_p_2_diagonal_cima_esquerda2 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda2');
+const btn_bispo_p_2_diagonal_cima_esquerda3 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda3');
+const btn_bispo_p_2_diagonal_cima_esquerda4 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda4');
+const btn_bispo_p_2_diagonal_cima_esquerda5 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda5');
+const btn_bispo_p_2_diagonal_cima_esquerda6 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda6');
+const btn_bispo_p_2_diagonal_cima_esquerda7 = document.getElementById('btn_bispo_p_2_diagonal_cima_esquerda7');
+
+const btn_bispo_p_2_diagonal_baixo_direita1 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita1');
+const btn_bispo_p_2_diagonal_baixo_direita2 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita2');
+const btn_bispo_p_2_diagonal_baixo_direita3 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita3');
+const btn_bispo_p_2_diagonal_baixo_direita4 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita4');
+const btn_bispo_p_2_diagonal_baixo_direita5 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita5');
+const btn_bispo_p_2_diagonal_baixo_direita6 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita6');
+const btn_bispo_p_2_diagonal_baixo_direita7 = document.getElementById('btn_bispo_p_2_diagonal_baixo_direita7');
+
+const btn_bispo_p_2_diagonal_baixo_esquerda1 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda1');
+const btn_bispo_p_2_diagonal_baixo_esquerda2 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda2');
+const btn_bispo_p_2_diagonal_baixo_esquerda3 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda3');
+const btn_bispo_p_2_diagonal_baixo_esquerda4 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda4');
+const btn_bispo_p_2_diagonal_baixo_esquerda5 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda5');
+const btn_bispo_p_2_diagonal_baixo_esquerda6 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda6');
+const btn_bispo_p_2_diagonal_baixo_esquerda7 = document.getElementById('btn_bispo_p_2_diagonal_baixo_esquerda7');
+
+
+// jogadas rei branco
+const btn_rei_b_1_andar1 = document.getElementById('btn_rei_b_1_andar1');
+const btn_rei_b_1_andar2 = document.getElementById('btn_rei_b_1_andar2');
+const btn_rei_b_1_andar3 = document.getElementById('btn_rei_b_1_andar3');
+const btn_rei_b_1_andar4 = document.getElementById('btn_rei_b_1_andar4');
+const btn_rei_b_1_andar5 = document.getElementById('btn_rei_b_1_andar5');
+const btn_rei_b_1_andar6 = document.getElementById('btn_rei_b_1_andar6');
+const btn_rei_b_1_andar7 = document.getElementById('btn_rei_b_1_andar7');
+const btn_rei_b_1_andar8 = document.getElementById('btn_rei_b_1_andar8');
+
+// jogadas rei preto
+const btn_rei_p_1_andar1 = document.getElementById('btn_rei_p_1_andar1');
+const btn_rei_p_1_andar2 = document.getElementById('btn_rei_p_1_andar2');
+const btn_rei_p_1_andar3 = document.getElementById('btn_rei_p_1_andar3');
+const btn_rei_p_1_andar4 = document.getElementById('btn_rei_p_1_andar4');
+const btn_rei_p_1_andar5 = document.getElementById('btn_rei_p_1_andar5');
+const btn_rei_p_1_andar6 = document.getElementById('btn_rei_p_1_andar6');
+const btn_rei_p_1_andar7 = document.getElementById('btn_rei_p_1_andar7');
+const btn_rei_p_1_andar8 = document.getElementById('btn_rei_p_1_andar8');
+
+
+// jogadas rainha branca
+const btn_rainha_b_1_andar1 = document.getElementById('btn_rainha_b_1_andar1');
+const btn_rainha_b_1_andar2 = document.getElementById('btn_rainha_b_1_andar2');
+const btn_rainha_b_1_andar3 = document.getElementById('btn_rainha_b_1_andar3');
+const btn_rainha_b_1_andar4 = document.getElementById('btn_rainha_b_1_andar4');
+const btn_rainha_b_1_andar5 = document.getElementById('btn_rainha_b_1_andar5');
+const btn_rainha_b_1_andar6 = document.getElementById('btn_rainha_b_1_andar6');
+const btn_rainha_b_1_andar7 = document.getElementById('btn_rainha_b_1_andar7');
+
+const btn_rainha_b_1_andar_lado1 = document.getElementById('btn_rainha_b_1_andar_lado1');
+const btn_rainha_b_1_andar_lado2 = document.getElementById('btn_rainha_b_1_andar_lado2');
+const btn_rainha_b_1_andar_lado3 = document.getElementById('btn_rainha_b_1_andar_lado3');
+const btn_rainha_b_1_andar_lado4 = document.getElementById('btn_rainha_b_1_andar_lado4');
+const btn_rainha_b_1_andar_lado5 = document.getElementById('btn_rainha_b_1_andar_lado5');
+const btn_rainha_b_1_andar_lado6 = document.getElementById('btn_rainha_b_1_andar_lado6');
+const btn_rainha_b_1_andar_lado7 = document.getElementById('btn_rainha_b_1_andar_lado7');
+
+const btn_rainha_b_1_andar_lado_esquerdo1 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo1');
+const btn_rainha_b_1_andar_lado_esquerdo2 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo2');
+const btn_rainha_b_1_andar_lado_esquerdo3 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo3');
+const btn_rainha_b_1_andar_lado_esquerdo4 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo4');
+const btn_rainha_b_1_andar_lado_esquerdo5 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo5');
+const btn_rainha_b_1_andar_lado_esquerdo6 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo6');
+const btn_rainha_b_1_andar_lado_esquerdo7 = document.getElementById('btn_rainha_b_1_andar_lado_esquerdo7');
+
+const btn_rainha_b_1_andar_tras1 = document.getElementById('btn_rainha_b_1_andar_tras1');
+const btn_rainha_b_1_andar_tras2 = document.getElementById('btn_rainha_b_1_andar_tras2');
+const btn_rainha_b_1_andar_tras3 = document.getElementById('btn_rainha_b_1_andar_tras3');
+const btn_rainha_b_1_andar_tras4 = document.getElementById('btn_rainha_b_1_andar_tras4');
+const btn_rainha_b_1_andar_tras5 = document.getElementById('btn_rainha_b_1_andar_tras5');
+const btn_rainha_b_1_andar_tras6 = document.getElementById('btn_rainha_b_1_andar_tras6');
+const btn_rainha_b_1_andar_tras7 = document.getElementById('btn_rainha_b_1_andar_tras7');
+
+const btn_rainha_b_1_diagonal_cima_direita1 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita1');
+const btn_rainha_b_1_diagonal_cima_direita2 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita2');
+const btn_rainha_b_1_diagonal_cima_direita3 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita3');
+const btn_rainha_b_1_diagonal_cima_direita4 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita4');
+const btn_rainha_b_1_diagonal_cima_direita5 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita5');
+const btn_rainha_b_1_diagonal_cima_direita6 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita6');
+const btn_rainha_b_1_diagonal_cima_direita7 = document.getElementById('btn_rainha_b_1_diagonal_cima_direita7');
+
+const btn_rainha_b_1_diagonal_cima_esquerda1 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda1');
+const btn_rainha_b_1_diagonal_cima_esquerda2 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda2');
+const btn_rainha_b_1_diagonal_cima_esquerda3 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda3');
+const btn_rainha_b_1_diagonal_cima_esquerda4 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda4');
+const btn_rainha_b_1_diagonal_cima_esquerda5 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda5');
+const btn_rainha_b_1_diagonal_cima_esquerda6 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda6');
+const btn_rainha_b_1_diagonal_cima_esquerda7 = document.getElementById('btn_rainha_b_1_diagonal_cima_esquerda7');
+
+const btn_rainha_b_1_diagonal_baixo_direita1 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita1');
+const btn_rainha_b_1_diagonal_baixo_direita2 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita2');
+const btn_rainha_b_1_diagonal_baixo_direita3 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita3');
+const btn_rainha_b_1_diagonal_baixo_direita4 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita4');
+const btn_rainha_b_1_diagonal_baixo_direita5 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita5');
+const btn_rainha_b_1_diagonal_baixo_direita6 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita6');
+const btn_rainha_b_1_diagonal_baixo_direita7 = document.getElementById('btn_rainha_b_1_diagonal_baixo_direita7');
+
+const btn_rainha_b_1_diagonal_baixo_esquerda1 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda1');
+const btn_rainha_b_1_diagonal_baixo_esquerda2 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda2');
+const btn_rainha_b_1_diagonal_baixo_esquerda3 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda3');
+const btn_rainha_b_1_diagonal_baixo_esquerda4 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda4');
+const btn_rainha_b_1_diagonal_baixo_esquerda5 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda5');
+const btn_rainha_b_1_diagonal_baixo_esquerda6 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda6');
+const btn_rainha_b_1_diagonal_baixo_esquerda7 = document.getElementById('btn_rainha_b_1_diagonal_baixo_esquerda7');
+
+// jogadas rainha preta
+const btn_rainha_p_1_andar1 = document.getElementById('btn_rainha_p_1_andar1');
+const btn_rainha_p_1_andar2 = document.getElementById('btn_rainha_p_1_andar2');
+const btn_rainha_p_1_andar3 = document.getElementById('btn_rainha_p_1_andar3');
+const btn_rainha_p_1_andar4 = document.getElementById('btn_rainha_p_1_andar4');
+const btn_rainha_p_1_andar5 = document.getElementById('btn_rainha_p_1_andar5');
+const btn_rainha_p_1_andar6 = document.getElementById('btn_rainha_p_1_andar6');
+const btn_rainha_p_1_andar7 = document.getElementById('btn_rainha_p_1_andar7');
+
+const btn_rainha_p_1_andar_lado1 = document.getElementById('btn_rainha_p_1_andar_lado1');
+const btn_rainha_p_1_andar_lado2 = document.getElementById('btn_rainha_p_1_andar_lado2');
+const btn_rainha_p_1_andar_lado3 = document.getElementById('btn_rainha_p_1_andar_lado3');
+const btn_rainha_p_1_andar_lado4 = document.getElementById('btn_rainha_p_1_andar_lado4');
+const btn_rainha_p_1_andar_lado5 = document.getElementById('btn_rainha_p_1_andar_lado5');
+const btn_rainha_p_1_andar_lado6 = document.getElementById('btn_rainha_p_1_andar_lado6');
+const btn_rainha_p_1_andar_lado7 = document.getElementById('btn_rainha_p_1_andar_lado7');
+
+const btn_rainha_p_1_andar_lado_esquerdo1 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo1');
+const btn_rainha_p_1_andar_lado_esquerdo2 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo2');
+const btn_rainha_p_1_andar_lado_esquerdo3 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo3');
+const btn_rainha_p_1_andar_lado_esquerdo4 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo4');
+const btn_rainha_p_1_andar_lado_esquerdo5 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo5');
+const btn_rainha_p_1_andar_lado_esquerdo6 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo6');
+const btn_rainha_p_1_andar_lado_esquerdo7 = document.getElementById('btn_rainha_p_1_andar_lado_esquerdo7');
+
+const btn_rainha_p_1_andar_tras1 = document.getElementById('btn_rainha_p_1_andar_tras1');
+const btn_rainha_p_1_andar_tras2 = document.getElementById('btn_rainha_p_1_andar_tras2');
+const btn_rainha_p_1_andar_tras3 = document.getElementById('btn_rainha_p_1_andar_tras3');
+const btn_rainha_p_1_andar_tras4 = document.getElementById('btn_rainha_p_1_andar_tras4');
+const btn_rainha_p_1_andar_tras5 = document.getElementById('btn_rainha_p_1_andar_tras5');
+const btn_rainha_p_1_andar_tras6 = document.getElementById('btn_rainha_p_1_andar_tras6');
+const btn_rainha_p_1_andar_tras7 = document.getElementById('btn_rainha_p_1_andar_tras7');
+
+const btn_rainha_p_1_diagonal_cima_direita1 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita1');
+const btn_rainha_p_1_diagonal_cima_direita2 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita2');
+const btn_rainha_p_1_diagonal_cima_direita3 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita3');
+const btn_rainha_p_1_diagonal_cima_direita4 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita4');
+const btn_rainha_p_1_diagonal_cima_direita5 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita5');
+const btn_rainha_p_1_diagonal_cima_direita6 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita6');
+const btn_rainha_p_1_diagonal_cima_direita7 = document.getElementById('btn_rainha_p_1_diagonal_cima_direita7');
+
+const btn_rainha_p_1_diagonal_cima_esquerda1 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda1');
+const btn_rainha_p_1_diagonal_cima_esquerda2 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda2');
+const btn_rainha_p_1_diagonal_cima_esquerda3 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda3');
+const btn_rainha_p_1_diagonal_cima_esquerda4 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda4');
+const btn_rainha_p_1_diagonal_cima_esquerda5 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda5');
+const btn_rainha_p_1_diagonal_cima_esquerda6 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda6');
+const btn_rainha_p_1_diagonal_cima_esquerda7 = document.getElementById('btn_rainha_p_1_diagonal_cima_esquerda7');
+
+const btn_rainha_p_1_diagonal_baixo_direita1 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita1');
+const btn_rainha_p_1_diagonal_baixo_direita2 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita2');
+const btn_rainha_p_1_diagonal_baixo_direita3 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita3');
+const btn_rainha_p_1_diagonal_baixo_direita4 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita4');
+const btn_rainha_p_1_diagonal_baixo_direita5 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita5');
+const btn_rainha_p_1_diagonal_baixo_direita6 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita6');
+const btn_rainha_p_1_diagonal_baixo_direita7 = document.getElementById('btn_rainha_p_1_diagonal_baixo_direita7');
+
+const btn_rainha_p_1_diagonal_baixo_esquerda1 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda1');
+const btn_rainha_p_1_diagonal_baixo_esquerda2 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda2');
+const btn_rainha_p_1_diagonal_baixo_esquerda3 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda3');
+const btn_rainha_p_1_diagonal_baixo_esquerda4 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda4');
+const btn_rainha_p_1_diagonal_baixo_esquerda5 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda5');
+const btn_rainha_p_1_diagonal_baixo_esquerda6 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda6');
+const btn_rainha_p_1_diagonal_baixo_esquerda7 = document.getElementById('btn_rainha_p_1_diagonal_baixo_esquerda7');
+
 
 
 
@@ -239,7 +691,9 @@ resetar.onclick = () =>{
     peao_b_8.style.left = posicoes_x[7] + "px";
     peao_b_8.style.top = posicoes_y[1] + "px";
 
-    
+    casa_atualx = -1;
+    casa_atualy = -1;
+
     ycords_peao_p_1 = 6;
     ycords_peao_p_2 = 6;
     ycords_peao_p_3 = 6;
@@ -252,6 +706,51 @@ resetar.onclick = () =>{
     ycords_torre_b_1 = 0;
     xcords_torre_b_1 = 0;
 
+    ycords_torre_b_2 = 0;
+    xcords_torre_b_2 = 7;
+
+    ycords_torre_p_1 = 7;
+    xcords_torre_p_1 = 0;
+
+    ycords_torre_p_2 = 7;
+    xcords_torre_p_2 = 7;
+
+    ycords_cavalo_b_1 = 0;
+    xcords_cavalo_b_1 = 1;
+
+    ycords_cavalo_b_2 = 0;
+    xcords_cavalo_b_2 = 6;
+
+    ycords_cavalo_p_1 = 7;
+    xcords_cavalo_p_1 = 1;
+
+    ycords_cavalo_p_2 = 7;
+    xcords_cavalo_p_2 = 6;
+
+    ycords_bispo_b_1 = 0;
+    xcords_bispo_b_1 = 2;
+
+    ycords_bispo_b_2 = 0;
+    xcords_bispo_b_2 = 5;
+
+    ycords_bispo_p_1 = 7;
+    xcords_bispo_p_1 = 2;
+
+    ycords_bispo_p_2 = 7;
+    xcords_bispo_p_2 = 5;
+
+    ycords_rainha_b = 0;
+    xcords_rainha_b = 3;
+
+    ycords_rainha_p = 7;
+    xcords_rainha_p = 3;
+
+    ycords_rei_b = 0;
+    xcords_rei_b = 4;
+
+    ycords_rei_p = 7;
+    xcords_rei_p = 4;
+
     ycords_peao_b_1 = 1;
     ycords_peao_b_2 = 1;
     ycords_peao_b_3 = 1;
@@ -262,6 +761,16 @@ resetar.onclick = () =>{
     ycords_peao_b_8 = 1;
 
 
+    // contar jogadas do peão preto
+    jogadas_peao_p_1 = 0;
+    jogadas_peao_p_2 = 0;
+    jogadas_peao_p_3= 0;
+    jogadas_peao_p_4 = 0;
+    jogadas_peao_p_5 = 0;
+    jogadas_peao_p_6 = 0;
+    jogadas_peao_p_7 = 0;
+    jogadas_peao_p_8 = 0;
+
     // contar jogadas do peão branco
     jogadas_peao_b_1 = 0;
     jogadas_peao_b_2 = 0;
@@ -271,4 +780,49 @@ resetar.onclick = () =>{
     jogadas_peao_b_6 = 0;
     jogadas_peao_b_7 = 0;
     jogadas_peao_b_8 = 0;
+
+    limpar_bispos();
+    limpar_bispos_b_2();
+    limpar_bispos_p();
+    limpar_bispos_p_2();
+    limpar_cavalos_b_1();
+    limpar_cavalos_b_2();
+    limpar_cavalos_p_1();
+    limpar_cavalos_p_2();
+    limpar_peoes();
+    limpar_rainhas_b();
+    limpar_rainhas_p();
+    limpar_reis();
+    limpar_reis_p();
+    limpar_torres_b_1();
+    limpar_torres_b_2();
+    limpar_torres_p_1();
+    limpar_torres_p_2();
+}
+
+
+cancelar.onclick = () =>{
+    limpar_bispos();
+    limpar_bispos_b_2();
+    limpar_bispos_p();
+    limpar_bispos_p_2();
+    limpar_cavalos_b_1();
+    limpar_cavalos_b_2();
+    limpar_cavalos_p_1();
+    limpar_cavalos_p_2();
+    limpar_peoes();
+    limpar_rainhas_b();
+    limpar_rainhas_p();
+    limpar_reis();
+    limpar_reis_p();
+    limpar_torres_b_1();
+    limpar_torres_b_2();
+    limpar_torres_p_1();
+    limpar_torres_p_2();
+}
+
+turno.onclick = () =>{
+    if(casa_atualx == xcords_torre_p_2 && casa_atualy == ycords_torre_p_2){
+        torre_p_2.style.display = "none";
+    }
 }

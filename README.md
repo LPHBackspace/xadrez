@@ -11,10 +11,13 @@
 <img src="https://github.com/LPHBackspace/xadrez/blob/main/xadrez_images/xadrez_img.PNG">
 <br>
 <h1>Guia de montagem dp modelo físico</h1>
-<p>Materiais necessários</p>
-- 1 placa ESP32S3
-- 4 Jumpers 
-- 1 LCD
+<p>Materiais necessários:</p>
+
+##
+
+- 1 placa ESP32S3;
+- 4 Jumpers;
+- 1 LCD;
 <br>
 <p>Para a realização da montagem, siga a ilustração abaixo:</p>
 <img src="https://github.com/LPHBackspace/xadrez/blob/main/xadrez_images/guia%20de%20montagem.PNG">

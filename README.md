@@ -17,6 +17,7 @@
 
 - 1 placa ESP32S3
 - 4 Jumpers "Macho Fêmea"
+- 1 Protoboard "caso não tenha, você pode ligar os jumpers diretamente na placa, utilizando 4 jumpers do tipo Fêmea"
 - 1 Display LCD
   
 <br>

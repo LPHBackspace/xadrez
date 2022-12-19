@@ -477,18 +477,3 @@ button p{
     position: absolute;
 }
 
-
-/* The animation code */
-@keyframes piscar {
-    from {opacity: 1;}
-    to {opacity: .2;}
-  }
-  
-  /* The element to apply the animation to */
-.pedrao {
-    width: 100px;
-    height: 100px;
-    animation: mymove 5s infinite;
-    animation-name: piscar;
-    animation-duration: 3s;
-  }

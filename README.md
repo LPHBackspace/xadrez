@@ -16,7 +16,7 @@
 ##
 
 - 1 placa ESP32S3;
-- 4 Jumpers;
+- 4 Jumpers "Macho Fêmea";
 - 1 LCD;
 <br>
 <p>Para a realização da montagem, siga a ilustração abaixo:</p>

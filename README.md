@@ -15,12 +15,17 @@
 
 ##
 
-- 1 placa ESP32S3;
-- 4 Jumpers "Macho Fêmea";
-- 1 LCD;
+- 1 placa ESP32S3
+- 4 Jumpers "Macho Fêmea"
+- 1 LCD
+  
 <br>
+  
 <p>Para a realização da montagem, siga a ilustração abaixo:</p>
+  
 <img src="https://github.com/LPHBackspace/xadrez/blob/main/xadrez_images/guia%20de%20montagem.PNG">
+  
 <br>
+  
 <h1>Demonstração do modelo físico após montado</h1>
 <img src="https://github.com/LPHBackspace/xadrez/blob/main/xadrez_images/modelo_fisico.jpeg">

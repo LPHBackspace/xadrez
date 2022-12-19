@@ -17,7 +17,7 @@
 
 - 1 placa ESP32S3
 - 4 Jumpers "Macho Fêmea"
-- 1 LCD
+- 1 Display LCD
   
 <br>
   

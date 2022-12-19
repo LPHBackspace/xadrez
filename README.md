@@ -21,7 +21,7 @@
   
 <br>
   
-<h1>Para a realização da montagem, siga a ilustração abaixo:</h1>
+<h1>Para a realização da montagem, siga a ilustração abaixo</h1>
   
 <img src="https://github.com/LPHBackspace/xadrez/blob/main/xadrez_images/guia%20de%20montagem.PNG">
   

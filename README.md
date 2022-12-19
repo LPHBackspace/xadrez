@@ -2,7 +2,7 @@
 <p>Este projeto possibilita além de jogar xadrez com 2 jogadores "localmente", também realiza uma troca de informações entre a página web e um microcontrolador "ESP32S3", enviando o dado de qual time venceu por meio de uma API.</p>
 <br>
 
-<p>Caso dejese dar uma olhada no projeto sem baixar os arquivos, aqui vai um <a href="https://www.youtube.com/watch?v=jSJb0L2z9xk">Vídeo demonstrativo<a></p>
+<p>Caso dejese dar uma olhada no projeto sem baixar os arquivos, aqui vai um <a href="https://www.youtube.com/watch?v=jSJb0L2z9xk">Vídeo demonstrativo.<a></p>
 
 
 <br>
